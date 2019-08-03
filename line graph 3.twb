@@ -1,0 +1,2922 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20191.19.0515.1028                               -->
+<workbook original-version='18.1' source-build='2019.1.4 (20191.19.0515.1028)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Property AssessmentCleaned Data (Group4_Property_assessment_sheet)' inline='true' name='federated.1jkqq3h1r43cif0znoygc0jy9eqx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Group4_Property_assessment_sheet' name='excel-direct.1bh7kfr0q3ko3m1gjsvt914ztd3f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/nishtha/Desktop/GitHub/GitHub/Tableau Project/Group4_Property_assessment_sheet.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1bh7kfr0q3ko3m1gjsvt914ztd3f' name='Property AssessmentCleaned Data' table='[&apos;Property AssessmentCleaned Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:G10001:no:A1:G10001:0' header='yes' outcome='6'>
+            <column datatype='string' name='Location' ordinal='0' />
+            <column datatype='integer' name='ZIPCODE' ordinal='1' />
+            <column datatype='string' name='Categories' ordinal='2' />
+            <column datatype='string' name='LU' ordinal='3' />
+            <column datatype='integer' name='AV_TOTAL' ordinal='4' />
+            <column datatype='integer' name='YR_BUILT' ordinal='5' />
+            <column datatype='integer' name='YR_REMOD' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIPCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIPCODE]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>ZIPCODE</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categories]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>Categories</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LU</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LU]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>LU</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_TOTAL]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>AV_TOTAL</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_BUILT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_BUILT]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>YR_BUILT</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_REMOD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_REMOD]</local-name>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias>YR_REMOD</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Property AssessmentCleaned Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G10001:no:A1:G10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Av Total' datatype='integer' name='[AV_TOTAL]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Yr Built' datatype='integer' name='[YR_BUILT]' role='dimension' type='quantitative' />
+      <column caption='Yr Remod' datatype='integer' name='[YR_REMOD]' role='dimension' type='quantitative' />
+      <column caption='Zipcode' datatype='integer' default-format='*00000' name='[ZIPCODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.566265' measure-ordering='alphabetic' measure-percentage='0.433735' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='A (Cleaned Data Assignment1)' inline='true' name='federated.1if3g0z0l02l761g7zaup1ncgi2d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned Data Assignment1' name='excel-direct.1tk4c2t1tjypk110c4g3n0i20qyg'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/nishtha/Desktop/GitHub/GitHub/Tableau Project/line graph 3.twb Files/Data/Downloads/Cleaned Data Assignment1.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[A].[GIS_ID]' />
+              <expression op='[A1].[GIS_ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.1tk4c2t1tjypk110c4g3n0i20qyg' name='A' table='[A$]' type='table'>
+            <columns gridOrigin='A1:BN10001:no:A1:BN10001:0' header='yes' lost='0' outcome='2' processed='204142'>
+              <column datatype='integer' name='PID' ordinal='0' />
+              <column datatype='integer' name='CM_ID' ordinal='1' />
+              <column datatype='integer' name='GIS_ID' ordinal='2' />
+              <column datatype='string' name='ST_NUM' ordinal='3' />
+              <column datatype='string' name='ST_NAME' ordinal='4' />
+              <column datatype='string' name='ST_NAME_SUF' ordinal='5' />
+              <column datatype='string' name='UNIT_NUM' ordinal='6' />
+              <column datatype='string' name='Location1' ordinal='7' />
+              <column datatype='string' name='Location2' ordinal='8' />
+              <column datatype='integer' name='ZIPCODE' ordinal='9' />
+              <column datatype='integer' name='PTYPE' ordinal='10' />
+              <column datatype='string' name='Categories' ordinal='11' />
+              <column datatype='string' name='LU' ordinal='12' />
+              <column datatype='string' name='OWN_OCC' ordinal='13' />
+              <column datatype='string' name='OWNER' ordinal='14' />
+              <column datatype='string' name='MAIL_ADDRESSEE' ordinal='15' />
+              <column datatype='string' name='MAIL_ADDRESS' ordinal='16' />
+              <column datatype='string' name='MAIL CS' ordinal='17' />
+              <column datatype='integer' name='MAIL_ZIPCODE' ordinal='18' />
+              <column datatype='integer' name='AV_LAND' ordinal='19' />
+              <column datatype='integer' name='AV_BLDG' ordinal='20' />
+              <column datatype='integer' name='AV_TOTAL' ordinal='21' />
+              <column datatype='integer' name='GROSS_TAX' ordinal='22' />
+              <column datatype='integer' name='LAND_SF' ordinal='23' />
+              <column datatype='integer' name='YR_BUILT' ordinal='24' />
+              <column datatype='integer' name='YR_REMOD' ordinal='25' />
+              <column datatype='integer' name='GROSS_AREA' ordinal='26' />
+              <column datatype='integer' name='LIVING_AREA' ordinal='27' />
+              <column datatype='real' name='NUM_FLOORS' ordinal='28' />
+              <column datatype='string' name='STRUCTURE_CLASS' ordinal='29' />
+              <column datatype='string' name='R_BLDG_STYL' ordinal='30' />
+              <column datatype='string' name='R_ROOF_TYP' ordinal='31' />
+              <column datatype='string' name='R_EXT_FIN' ordinal='32' />
+              <column datatype='integer' name='R_TOTAL_RMS' ordinal='33' />
+              <column datatype='integer' name='R_BDRMS' ordinal='34' />
+              <column datatype='integer' name='R_FULL_BTH' ordinal='35' />
+              <column datatype='integer' name='R_HALF_BTH' ordinal='36' />
+              <column datatype='string' name='R_BTH_STYLE' ordinal='37' />
+              <column datatype='string' name='R_BTH_STYLE2' ordinal='38' />
+              <column datatype='integer' name='R_KITCH' ordinal='39' />
+              <column datatype='string' name='R_KITCH_STYLE' ordinal='40' />
+              <column datatype='string' name='R_HEAT_TYP' ordinal='41' />
+              <column datatype='string' name='R_AC' ordinal='42' />
+              <column datatype='integer' name='R_FPLACE' ordinal='43' />
+              <column datatype='string' name='R_EXT_CND' ordinal='44' />
+              <column datatype='string' name='R_OVRALL_CND' ordinal='45' />
+              <column datatype='string' name='R_INT_CND' ordinal='46' />
+              <column datatype='string' name='R_INT_FIN' ordinal='47' />
+              <column datatype='string' name='R_VIEW' ordinal='48' />
+              <column datatype='integer' name='U_BASE_FLOOR' ordinal='49' />
+              <column datatype='integer' name='U_NUM_PARK' ordinal='50' />
+              <column datatype='string' name='U_CORNER' ordinal='51' />
+              <column datatype='string' name='U_ORIENT' ordinal='52' />
+              <column datatype='integer' name='U_TOT_RMS' ordinal='53' />
+              <column datatype='integer' name='U_BDRMS' ordinal='54' />
+              <column datatype='integer' name='U_FULL_BTH' ordinal='55' />
+              <column datatype='integer' name='U_HALF_BTH' ordinal='56' />
+              <column datatype='string' name='U_BTH_STYLE' ordinal='57' />
+              <column datatype='string' name='U_KITCH_TYPE' ordinal='58' />
+              <column datatype='string' name='U_KITCH_STYLE' ordinal='59' />
+              <column datatype='string' name='U_HEAT_TYP' ordinal='60' />
+              <column datatype='string' name='U_AC' ordinal='61' />
+              <column datatype='integer' name='U_FPLACE' ordinal='62' />
+              <column datatype='string' name='U_INT_FIN' ordinal='63' />
+              <column datatype='string' name='U_INT_CND' ordinal='64' />
+              <column datatype='string' name='U_VIEW' ordinal='65' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1tk4c2t1tjypk110c4g3n0i20qyg' name='A1' table='[A$]' type='table'>
+            <columns gridOrigin='A1:BN10001:no:A1:BN10001:0' header='yes' lost='0' outcome='2' processed='204142'>
+              <column datatype='integer' name='PID' ordinal='0' />
+              <column datatype='integer' name='CM_ID' ordinal='1' />
+              <column datatype='integer' name='GIS_ID' ordinal='2' />
+              <column datatype='string' name='ST_NUM' ordinal='3' />
+              <column datatype='string' name='ST_NAME' ordinal='4' />
+              <column datatype='string' name='ST_NAME_SUF' ordinal='5' />
+              <column datatype='string' name='UNIT_NUM' ordinal='6' />
+              <column datatype='string' name='Location1' ordinal='7' />
+              <column datatype='string' name='Location2' ordinal='8' />
+              <column datatype='integer' name='ZIPCODE' ordinal='9' />
+              <column datatype='integer' name='PTYPE' ordinal='10' />
+              <column datatype='string' name='Categories' ordinal='11' />
+              <column datatype='string' name='LU' ordinal='12' />
+              <column datatype='string' name='OWN_OCC' ordinal='13' />
+              <column datatype='string' name='OWNER' ordinal='14' />
+              <column datatype='string' name='MAIL_ADDRESSEE' ordinal='15' />
+              <column datatype='string' name='MAIL_ADDRESS' ordinal='16' />
+              <column datatype='string' name='MAIL CS' ordinal='17' />
+              <column datatype='integer' name='MAIL_ZIPCODE' ordinal='18' />
+              <column datatype='integer' name='AV_LAND' ordinal='19' />
+              <column datatype='integer' name='AV_BLDG' ordinal='20' />
+              <column datatype='integer' name='AV_TOTAL' ordinal='21' />
+              <column datatype='integer' name='GROSS_TAX' ordinal='22' />
+              <column datatype='integer' name='LAND_SF' ordinal='23' />
+              <column datatype='integer' name='YR_BUILT' ordinal='24' />
+              <column datatype='integer' name='YR_REMOD' ordinal='25' />
+              <column datatype='integer' name='GROSS_AREA' ordinal='26' />
+              <column datatype='integer' name='LIVING_AREA' ordinal='27' />
+              <column datatype='real' name='NUM_FLOORS' ordinal='28' />
+              <column datatype='string' name='STRUCTURE_CLASS' ordinal='29' />
+              <column datatype='string' name='R_BLDG_STYL' ordinal='30' />
+              <column datatype='string' name='R_ROOF_TYP' ordinal='31' />
+              <column datatype='string' name='R_EXT_FIN' ordinal='32' />
+              <column datatype='integer' name='R_TOTAL_RMS' ordinal='33' />
+              <column datatype='integer' name='R_BDRMS' ordinal='34' />
+              <column datatype='integer' name='R_FULL_BTH' ordinal='35' />
+              <column datatype='integer' name='R_HALF_BTH' ordinal='36' />
+              <column datatype='string' name='R_BTH_STYLE' ordinal='37' />
+              <column datatype='string' name='R_BTH_STYLE2' ordinal='38' />
+              <column datatype='integer' name='R_KITCH' ordinal='39' />
+              <column datatype='string' name='R_KITCH_STYLE' ordinal='40' />
+              <column datatype='string' name='R_HEAT_TYP' ordinal='41' />
+              <column datatype='string' name='R_AC' ordinal='42' />
+              <column datatype='integer' name='R_FPLACE' ordinal='43' />
+              <column datatype='string' name='R_EXT_CND' ordinal='44' />
+              <column datatype='string' name='R_OVRALL_CND' ordinal='45' />
+              <column datatype='string' name='R_INT_CND' ordinal='46' />
+              <column datatype='string' name='R_INT_FIN' ordinal='47' />
+              <column datatype='string' name='R_VIEW' ordinal='48' />
+              <column datatype='integer' name='U_BASE_FLOOR' ordinal='49' />
+              <column datatype='integer' name='U_NUM_PARK' ordinal='50' />
+              <column datatype='string' name='U_CORNER' ordinal='51' />
+              <column datatype='string' name='U_ORIENT' ordinal='52' />
+              <column datatype='integer' name='U_TOT_RMS' ordinal='53' />
+              <column datatype='integer' name='U_BDRMS' ordinal='54' />
+              <column datatype='integer' name='U_FULL_BTH' ordinal='55' />
+              <column datatype='integer' name='U_HALF_BTH' ordinal='56' />
+              <column datatype='string' name='U_BTH_STYLE' ordinal='57' />
+              <column datatype='string' name='U_KITCH_TYPE' ordinal='58' />
+              <column datatype='string' name='U_KITCH_STYLE' ordinal='59' />
+              <column datatype='string' name='U_HEAT_TYP' ordinal='60' />
+              <column datatype='string' name='U_AC' ordinal='61' />
+              <column datatype='integer' name='U_FPLACE' ordinal='62' />
+              <column datatype='string' name='U_INT_FIN' ordinal='63' />
+              <column datatype='string' name='U_INT_CND' ordinal='64' />
+              <column datatype='string' name='U_VIEW' ordinal='65' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[AV_BLDG (A1)]' value='[A1].[AV_BLDG]' />
+          <map key='[AV_BLDG]' value='[A].[AV_BLDG]' />
+          <map key='[AV_LAND (A1)]' value='[A1].[AV_LAND]' />
+          <map key='[AV_LAND]' value='[A].[AV_LAND]' />
+          <map key='[AV_TOTAL (A1)]' value='[A1].[AV_TOTAL]' />
+          <map key='[AV_TOTAL]' value='[A].[AV_TOTAL]' />
+          <map key='[CM_ID (A1)]' value='[A1].[CM_ID]' />
+          <map key='[CM_ID]' value='[A].[CM_ID]' />
+          <map key='[Categories (A1)]' value='[A1].[Categories]' />
+          <map key='[Categories]' value='[A].[Categories]' />
+          <map key='[GIS_ID (A1)]' value='[A1].[GIS_ID]' />
+          <map key='[GIS_ID]' value='[A].[GIS_ID]' />
+          <map key='[GROSS_AREA (A1)]' value='[A1].[GROSS_AREA]' />
+          <map key='[GROSS_AREA]' value='[A].[GROSS_AREA]' />
+          <map key='[GROSS_TAX (A1)]' value='[A1].[GROSS_TAX]' />
+          <map key='[GROSS_TAX]' value='[A].[GROSS_TAX]' />
+          <map key='[LAND_SF (A1)]' value='[A1].[LAND_SF]' />
+          <map key='[LAND_SF]' value='[A].[LAND_SF]' />
+          <map key='[LIVING_AREA (A1)]' value='[A1].[LIVING_AREA]' />
+          <map key='[LIVING_AREA]' value='[A].[LIVING_AREA]' />
+          <map key='[LU (A1)]' value='[A1].[LU]' />
+          <map key='[LU]' value='[A].[LU]' />
+          <map key='[Location1 (A1)]' value='[A1].[Location1]' />
+          <map key='[Location1]' value='[A].[Location1]' />
+          <map key='[Location2 (A1)]' value='[A1].[Location2]' />
+          <map key='[Location2]' value='[A].[Location2]' />
+          <map key='[MAIL CS (A1)]' value='[A1].[MAIL CS]' />
+          <map key='[MAIL CS]' value='[A].[MAIL CS]' />
+          <map key='[MAIL_ADDRESS (A1)]' value='[A1].[MAIL_ADDRESS]' />
+          <map key='[MAIL_ADDRESSEE (A1)]' value='[A1].[MAIL_ADDRESSEE]' />
+          <map key='[MAIL_ADDRESSEE]' value='[A].[MAIL_ADDRESSEE]' />
+          <map key='[MAIL_ADDRESS]' value='[A].[MAIL_ADDRESS]' />
+          <map key='[MAIL_ZIPCODE (A1)]' value='[A1].[MAIL_ZIPCODE]' />
+          <map key='[MAIL_ZIPCODE]' value='[A].[MAIL_ZIPCODE]' />
+          <map key='[NUM_FLOORS (A1)]' value='[A1].[NUM_FLOORS]' />
+          <map key='[NUM_FLOORS]' value='[A].[NUM_FLOORS]' />
+          <map key='[OWNER (A1)]' value='[A1].[OWNER]' />
+          <map key='[OWNER]' value='[A].[OWNER]' />
+          <map key='[OWN_OCC (A1)]' value='[A1].[OWN_OCC]' />
+          <map key='[OWN_OCC]' value='[A].[OWN_OCC]' />
+          <map key='[PID (A1)]' value='[A1].[PID]' />
+          <map key='[PID]' value='[A].[PID]' />
+          <map key='[PTYPE (A1)]' value='[A1].[PTYPE]' />
+          <map key='[PTYPE]' value='[A].[PTYPE]' />
+          <map key='[R_AC (A1)]' value='[A1].[R_AC]' />
+          <map key='[R_AC]' value='[A].[R_AC]' />
+          <map key='[R_BDRMS (A1)]' value='[A1].[R_BDRMS]' />
+          <map key='[R_BDRMS]' value='[A].[R_BDRMS]' />
+          <map key='[R_BLDG_STYL (A1)]' value='[A1].[R_BLDG_STYL]' />
+          <map key='[R_BLDG_STYL]' value='[A].[R_BLDG_STYL]' />
+          <map key='[R_BTH_STYLE (A1)]' value='[A1].[R_BTH_STYLE]' />
+          <map key='[R_BTH_STYLE2 (A1)]' value='[A1].[R_BTH_STYLE2]' />
+          <map key='[R_BTH_STYLE2]' value='[A].[R_BTH_STYLE2]' />
+          <map key='[R_BTH_STYLE]' value='[A].[R_BTH_STYLE]' />
+          <map key='[R_EXT_CND (A1)]' value='[A1].[R_EXT_CND]' />
+          <map key='[R_EXT_CND]' value='[A].[R_EXT_CND]' />
+          <map key='[R_EXT_FIN (A1)]' value='[A1].[R_EXT_FIN]' />
+          <map key='[R_EXT_FIN]' value='[A].[R_EXT_FIN]' />
+          <map key='[R_FPLACE (A1)]' value='[A1].[R_FPLACE]' />
+          <map key='[R_FPLACE]' value='[A].[R_FPLACE]' />
+          <map key='[R_FULL_BTH (A1)]' value='[A1].[R_FULL_BTH]' />
+          <map key='[R_FULL_BTH]' value='[A].[R_FULL_BTH]' />
+          <map key='[R_HALF_BTH (A1)]' value='[A1].[R_HALF_BTH]' />
+          <map key='[R_HALF_BTH]' value='[A].[R_HALF_BTH]' />
+          <map key='[R_HEAT_TYP (A1)]' value='[A1].[R_HEAT_TYP]' />
+          <map key='[R_HEAT_TYP]' value='[A].[R_HEAT_TYP]' />
+          <map key='[R_INT_CND (A1)]' value='[A1].[R_INT_CND]' />
+          <map key='[R_INT_CND]' value='[A].[R_INT_CND]' />
+          <map key='[R_INT_FIN (A1)]' value='[A1].[R_INT_FIN]' />
+          <map key='[R_INT_FIN]' value='[A].[R_INT_FIN]' />
+          <map key='[R_KITCH (A1)]' value='[A1].[R_KITCH]' />
+          <map key='[R_KITCH]' value='[A].[R_KITCH]' />
+          <map key='[R_KITCH_STYLE (A1)]' value='[A1].[R_KITCH_STYLE]' />
+          <map key='[R_KITCH_STYLE]' value='[A].[R_KITCH_STYLE]' />
+          <map key='[R_OVRALL_CND (A1)]' value='[A1].[R_OVRALL_CND]' />
+          <map key='[R_OVRALL_CND]' value='[A].[R_OVRALL_CND]' />
+          <map key='[R_ROOF_TYP (A1)]' value='[A1].[R_ROOF_TYP]' />
+          <map key='[R_ROOF_TYP]' value='[A].[R_ROOF_TYP]' />
+          <map key='[R_TOTAL_RMS (A1)]' value='[A1].[R_TOTAL_RMS]' />
+          <map key='[R_TOTAL_RMS]' value='[A].[R_TOTAL_RMS]' />
+          <map key='[R_VIEW (A1)]' value='[A1].[R_VIEW]' />
+          <map key='[R_VIEW]' value='[A].[R_VIEW]' />
+          <map key='[STRUCTURE_CLASS (A1)]' value='[A1].[STRUCTURE_CLASS]' />
+          <map key='[STRUCTURE_CLASS]' value='[A].[STRUCTURE_CLASS]' />
+          <map key='[ST_NAME (A1)]' value='[A1].[ST_NAME]' />
+          <map key='[ST_NAME]' value='[A].[ST_NAME]' />
+          <map key='[ST_NAME_SUF (A1)]' value='[A1].[ST_NAME_SUF]' />
+          <map key='[ST_NAME_SUF]' value='[A].[ST_NAME_SUF]' />
+          <map key='[ST_NUM (A1)]' value='[A1].[ST_NUM]' />
+          <map key='[ST_NUM]' value='[A].[ST_NUM]' />
+          <map key='[UNIT_NUM (A1)]' value='[A1].[UNIT_NUM]' />
+          <map key='[UNIT_NUM]' value='[A].[UNIT_NUM]' />
+          <map key='[U_AC (A1)]' value='[A1].[U_AC]' />
+          <map key='[U_AC]' value='[A].[U_AC]' />
+          <map key='[U_BASE_FLOOR (A1)]' value='[A1].[U_BASE_FLOOR]' />
+          <map key='[U_BASE_FLOOR]' value='[A].[U_BASE_FLOOR]' />
+          <map key='[U_BDRMS (A1)]' value='[A1].[U_BDRMS]' />
+          <map key='[U_BDRMS]' value='[A].[U_BDRMS]' />
+          <map key='[U_BTH_STYLE (A1)]' value='[A1].[U_BTH_STYLE]' />
+          <map key='[U_BTH_STYLE]' value='[A].[U_BTH_STYLE]' />
+          <map key='[U_CORNER (A1)]' value='[A1].[U_CORNER]' />
+          <map key='[U_CORNER]' value='[A].[U_CORNER]' />
+          <map key='[U_FPLACE (A1)]' value='[A1].[U_FPLACE]' />
+          <map key='[U_FPLACE]' value='[A].[U_FPLACE]' />
+          <map key='[U_FULL_BTH (A1)]' value='[A1].[U_FULL_BTH]' />
+          <map key='[U_FULL_BTH]' value='[A].[U_FULL_BTH]' />
+          <map key='[U_HALF_BTH (A1)]' value='[A1].[U_HALF_BTH]' />
+          <map key='[U_HALF_BTH]' value='[A].[U_HALF_BTH]' />
+          <map key='[U_HEAT_TYP (A1)]' value='[A1].[U_HEAT_TYP]' />
+          <map key='[U_HEAT_TYP]' value='[A].[U_HEAT_TYP]' />
+          <map key='[U_INT_CND (A1)]' value='[A1].[U_INT_CND]' />
+          <map key='[U_INT_CND]' value='[A].[U_INT_CND]' />
+          <map key='[U_INT_FIN (A1)]' value='[A1].[U_INT_FIN]' />
+          <map key='[U_INT_FIN]' value='[A].[U_INT_FIN]' />
+          <map key='[U_KITCH_STYLE (A1)]' value='[A1].[U_KITCH_STYLE]' />
+          <map key='[U_KITCH_STYLE]' value='[A].[U_KITCH_STYLE]' />
+          <map key='[U_KITCH_TYPE (A1)]' value='[A1].[U_KITCH_TYPE]' />
+          <map key='[U_KITCH_TYPE]' value='[A].[U_KITCH_TYPE]' />
+          <map key='[U_NUM_PARK (A1)]' value='[A1].[U_NUM_PARK]' />
+          <map key='[U_NUM_PARK]' value='[A].[U_NUM_PARK]' />
+          <map key='[U_ORIENT (A1)]' value='[A1].[U_ORIENT]' />
+          <map key='[U_ORIENT]' value='[A].[U_ORIENT]' />
+          <map key='[U_TOT_RMS (A1)]' value='[A1].[U_TOT_RMS]' />
+          <map key='[U_TOT_RMS]' value='[A].[U_TOT_RMS]' />
+          <map key='[U_VIEW (A1)]' value='[A1].[U_VIEW]' />
+          <map key='[U_VIEW]' value='[A].[U_VIEW]' />
+          <map key='[YR_BUILT (A1)]' value='[A1].[YR_BUILT]' />
+          <map key='[YR_BUILT]' value='[A].[YR_BUILT]' />
+          <map key='[YR_REMOD (A1)]' value='[A1].[YR_REMOD]' />
+          <map key='[YR_REMOD]' value='[A].[YR_REMOD]' />
+          <map key='[ZIPCODE (A1)]' value='[A1].[ZIPCODE]' />
+          <map key='[ZIPCODE]' value='[A].[ZIPCODE]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>PID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PID]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>PID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CM_ID]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>CM_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIS_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GIS_ID]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>GIS_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NUM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NUM]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>ST_NUM</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NAME]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>ST_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NAME_SUF</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NAME_SUF]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>ST_NAME_SUF</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT_NUM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UNIT_NUM]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>UNIT_NUM</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location1]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>Location1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location2]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>Location2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIPCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIPCODE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>ZIPCODE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTYPE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PTYPE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>PTYPE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categories]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>Categories</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LU</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LU]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>LU</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWN_OCC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OWN_OCC]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>OWN_OCC</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OWNER]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>OWNER</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ADDRESSEE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL_ADDRESSEE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>MAIL_ADDRESSEE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ADDRESS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL_ADDRESS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>MAIL_ADDRESS</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL CS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL CS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>MAIL CS</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ZIPCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MAIL_ZIPCODE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>MAIL_ZIPCODE</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_LAND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_LAND]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>AV_LAND</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_BLDG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_BLDG]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>AV_BLDG</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_TOTAL]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>AV_TOTAL</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS_TAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GROSS_TAX]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>GROSS_TAX</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND_SF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LAND_SF]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>LAND_SF</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_BUILT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_BUILT]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>YR_BUILT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_REMOD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_REMOD]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>YR_REMOD</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS_AREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GROSS_AREA]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>GROSS_AREA</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVING_AREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVING_AREA]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>LIVING_AREA</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUM_FLOORS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NUM_FLOORS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>NUM_FLOORS</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STRUCTURE_CLASS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STRUCTURE_CLASS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>STRUCTURE_CLASS</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BLDG_STYL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BLDG_STYL]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_BLDG_STYL</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_ROOF_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_ROOF_TYP]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_ROOF_TYP</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_EXT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_EXT_FIN]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_EXT_FIN</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_TOTAL_RMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_TOTAL_RMS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_TOTAL_RMS</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BDRMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_BDRMS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_BDRMS</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_FULL_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_FULL_BTH]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_FULL_BTH</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_HALF_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_HALF_BTH]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_HALF_BTH</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BTH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BTH_STYLE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_BTH_STYLE</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BTH_STYLE2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BTH_STYLE2]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_BTH_STYLE2</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_KITCH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_KITCH]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_KITCH</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_KITCH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_KITCH_STYLE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_KITCH_STYLE</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_HEAT_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_HEAT_TYP]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_HEAT_TYP</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_AC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_AC]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_AC</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_FPLACE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_FPLACE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_FPLACE</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_EXT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_EXT_CND]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_EXT_CND</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_OVRALL_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_OVRALL_CND]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_OVRALL_CND</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_INT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_INT_CND]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_INT_CND</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_INT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_INT_FIN]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_INT_FIN</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_VIEW</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_VIEW]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>R_VIEW</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BASE_FLOOR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_BASE_FLOOR]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_BASE_FLOOR</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_NUM_PARK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_NUM_PARK]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_NUM_PARK</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_CORNER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_CORNER]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_CORNER</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_ORIENT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_ORIENT]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_ORIENT</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_TOT_RMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_TOT_RMS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_TOT_RMS</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BDRMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_BDRMS]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_BDRMS</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_FULL_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_FULL_BTH]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_FULL_BTH</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_HALF_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_HALF_BTH]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_HALF_BTH</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BTH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_BTH_STYLE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_BTH_STYLE</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_KITCH_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_KITCH_TYPE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_KITCH_TYPE</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_KITCH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_KITCH_STYLE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_KITCH_STYLE</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_HEAT_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_HEAT_TYP]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_HEAT_TYP</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_AC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_AC]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_AC</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_FPLACE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_FPLACE]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_FPLACE</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_INT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_INT_FIN]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_INT_FIN</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_INT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_INT_CND]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_INT_CND</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_VIEW</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_VIEW]</local-name>
+            <parent-name>[A]</parent-name>
+            <remote-alias>U_VIEW</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[A]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BN10001:no:A1:BN10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PID (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>PID</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CM_ID (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>CM_ID</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GIS_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GIS_ID (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>GIS_ID</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NUM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NUM (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>ST_NUM</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NAME</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NAME (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>ST_NAME</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ST_NAME_SUF</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ST_NAME_SUF (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>ST_NAME_SUF</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UNIT_NUM</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UNIT_NUM (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>UNIT_NUM</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location1 (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>Location1</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location2 (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>Location2</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIPCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIPCODE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>ZIPCODE</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTYPE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PTYPE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>PTYPE</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Categories</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Categories (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>Categories</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LU</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LU (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>LU</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWN_OCC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OWN_OCC (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>OWN_OCC</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OWNER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OWNER (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>OWNER</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ADDRESSEE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL_ADDRESSEE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>MAIL_ADDRESSEE</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ADDRESS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL_ADDRESS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>MAIL_ADDRESS</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL CS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[MAIL CS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>MAIL CS</remote-alias>
+            <ordinal>83</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIL_ZIPCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MAIL_ZIPCODE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>MAIL_ZIPCODE</remote-alias>
+            <ordinal>84</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_LAND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_LAND (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>AV_LAND</remote-alias>
+            <ordinal>85</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_BLDG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_BLDG (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>AV_BLDG</remote-alias>
+            <ordinal>86</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AV_TOTAL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AV_TOTAL (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>AV_TOTAL</remote-alias>
+            <ordinal>87</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS_TAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GROSS_TAX (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>GROSS_TAX</remote-alias>
+            <ordinal>88</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAND_SF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LAND_SF (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>LAND_SF</remote-alias>
+            <ordinal>89</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_BUILT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_BUILT (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>YR_BUILT</remote-alias>
+            <ordinal>90</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YR_REMOD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YR_REMOD (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>YR_REMOD</remote-alias>
+            <ordinal>91</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GROSS_AREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GROSS_AREA (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>GROSS_AREA</remote-alias>
+            <ordinal>92</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LIVING_AREA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LIVING_AREA (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>LIVING_AREA</remote-alias>
+            <ordinal>93</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUM_FLOORS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NUM_FLOORS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>NUM_FLOORS</remote-alias>
+            <ordinal>94</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STRUCTURE_CLASS</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[STRUCTURE_CLASS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>STRUCTURE_CLASS</remote-alias>
+            <ordinal>95</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BLDG_STYL</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BLDG_STYL (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_BLDG_STYL</remote-alias>
+            <ordinal>96</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_ROOF_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_ROOF_TYP (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_ROOF_TYP</remote-alias>
+            <ordinal>97</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_EXT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_EXT_FIN (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_EXT_FIN</remote-alias>
+            <ordinal>98</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_TOTAL_RMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_TOTAL_RMS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_TOTAL_RMS</remote-alias>
+            <ordinal>99</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BDRMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_BDRMS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_BDRMS</remote-alias>
+            <ordinal>100</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_FULL_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_FULL_BTH (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_FULL_BTH</remote-alias>
+            <ordinal>101</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_HALF_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_HALF_BTH (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_HALF_BTH</remote-alias>
+            <ordinal>102</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BTH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BTH_STYLE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_BTH_STYLE</remote-alias>
+            <ordinal>103</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_BTH_STYLE2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_BTH_STYLE2 (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_BTH_STYLE2</remote-alias>
+            <ordinal>104</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_KITCH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_KITCH (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_KITCH</remote-alias>
+            <ordinal>105</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_KITCH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_KITCH_STYLE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_KITCH_STYLE</remote-alias>
+            <ordinal>106</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_HEAT_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_HEAT_TYP (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_HEAT_TYP</remote-alias>
+            <ordinal>107</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_AC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_AC (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_AC</remote-alias>
+            <ordinal>108</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_FPLACE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[R_FPLACE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_FPLACE</remote-alias>
+            <ordinal>109</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_EXT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_EXT_CND (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_EXT_CND</remote-alias>
+            <ordinal>110</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_OVRALL_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_OVRALL_CND (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_OVRALL_CND</remote-alias>
+            <ordinal>111</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_INT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_INT_CND (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_INT_CND</remote-alias>
+            <ordinal>112</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_INT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_INT_FIN (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_INT_FIN</remote-alias>
+            <ordinal>113</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>R_VIEW</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[R_VIEW (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>R_VIEW</remote-alias>
+            <ordinal>114</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BASE_FLOOR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_BASE_FLOOR (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_BASE_FLOOR</remote-alias>
+            <ordinal>115</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_NUM_PARK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_NUM_PARK (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_NUM_PARK</remote-alias>
+            <ordinal>116</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_CORNER</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_CORNER (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_CORNER</remote-alias>
+            <ordinal>117</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_ORIENT</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_ORIENT (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_ORIENT</remote-alias>
+            <ordinal>118</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_TOT_RMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_TOT_RMS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_TOT_RMS</remote-alias>
+            <ordinal>119</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BDRMS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_BDRMS (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_BDRMS</remote-alias>
+            <ordinal>120</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_FULL_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_FULL_BTH (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_FULL_BTH</remote-alias>
+            <ordinal>121</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_HALF_BTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_HALF_BTH (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_HALF_BTH</remote-alias>
+            <ordinal>122</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_BTH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_BTH_STYLE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_BTH_STYLE</remote-alias>
+            <ordinal>123</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_KITCH_TYPE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_KITCH_TYPE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_KITCH_TYPE</remote-alias>
+            <ordinal>124</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_KITCH_STYLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_KITCH_STYLE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_KITCH_STYLE</remote-alias>
+            <ordinal>125</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_HEAT_TYP</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_HEAT_TYP (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_HEAT_TYP</remote-alias>
+            <ordinal>126</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_AC</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_AC (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_AC</remote-alias>
+            <ordinal>127</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_FPLACE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[U_FPLACE (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_FPLACE</remote-alias>
+            <ordinal>128</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_INT_FIN</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_INT_FIN (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_INT_FIN</remote-alias>
+            <ordinal>129</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_INT_CND</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_INT_CND (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_INT_CND</remote-alias>
+            <ordinal>130</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>U_VIEW</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[U_VIEW (A1)]</local-name>
+            <parent-name>[A1]</parent-name>
+            <remote-alias>U_VIEW</remote-alias>
+            <ordinal>131</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[A1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BN10001:no:A1:BN10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Av Bldg (A1)' datatype='integer' name='[AV_BLDG (A1)]' role='measure' type='quantitative' />
+      <column caption='Av Bldg' datatype='integer' name='[AV_BLDG]' role='measure' type='quantitative' />
+      <column caption='Av Land (A1)' datatype='integer' name='[AV_LAND (A1)]' role='measure' type='quantitative' />
+      <column caption='Av Land' datatype='integer' name='[AV_LAND]' role='measure' type='quantitative' />
+      <column caption='Av Total (A1)' datatype='integer' name='[AV_TOTAL (A1)]' role='measure' type='quantitative' />
+      <column caption='Av Total' datatype='integer' name='[AV_TOTAL]' role='measure' type='quantitative' />
+      <column caption='Cm Id (A1)' datatype='integer' name='[CM_ID (A1)]' role='dimension' type='ordinal' />
+      <column caption='Cm Id' datatype='integer' name='[CM_ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Categories]' role='dimension' type='nominal' />
+      <column caption='Gis Id (A1)' datatype='integer' name='[GIS_ID (A1)]' role='dimension' type='ordinal' />
+      <column caption='Gis Id' datatype='integer' name='[GIS_ID]' role='dimension' type='ordinal' />
+      <column caption='Gross Area (A1)' datatype='integer' name='[GROSS_AREA (A1)]' role='measure' type='quantitative' />
+      <column caption='Gross Area' datatype='integer' name='[GROSS_AREA]' role='measure' type='quantitative' />
+      <column caption='Gross Tax (A1)' datatype='integer' name='[GROSS_TAX (A1)]' role='measure' type='quantitative' />
+      <column caption='Gross Tax' datatype='integer' name='[GROSS_TAX]' role='measure' type='quantitative' />
+      <column caption='Land Sf (A1)' datatype='integer' name='[LAND_SF (A1)]' role='measure' type='quantitative' />
+      <column caption='Land Sf' datatype='integer' name='[LAND_SF]' role='measure' type='quantitative' />
+      <column caption='Living Area (A1)' datatype='integer' name='[LIVING_AREA (A1)]' role='measure' type='quantitative' />
+      <column caption='Living Area' datatype='integer' name='[LIVING_AREA]' role='measure' type='quantitative' />
+      <column caption='Lu (A1)' datatype='string' name='[LU (A1)]' role='dimension' type='nominal' />
+      <column caption='Mail Cs (A1)' datatype='string' name='[MAIL CS (A1)]' role='dimension' type='nominal' />
+      <column caption='Mail Cs' datatype='string' name='[MAIL CS]' role='dimension' type='nominal' />
+      <column caption='Mail Address (A1)' datatype='string' name='[MAIL_ADDRESS (A1)]' role='dimension' type='nominal' />
+      <column caption='Mail Addressee (A1)' datatype='string' name='[MAIL_ADDRESSEE (A1)]' role='dimension' type='nominal' />
+      <column caption='Mail Addressee' datatype='string' name='[MAIL_ADDRESSEE]' role='dimension' type='nominal' />
+      <column caption='Mail Address' datatype='string' name='[MAIL_ADDRESS]' role='dimension' type='nominal' />
+      <column caption='Mail Zipcode (A1)' datatype='integer' default-format='*00000' name='[MAIL_ZIPCODE (A1)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Mail Zipcode' datatype='integer' default-format='*00000' name='[MAIL_ZIPCODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Num Floors (A1)' datatype='real' name='[NUM_FLOORS (A1)]' role='measure' type='quantitative' />
+      <column caption='Num Floors' datatype='real' name='[NUM_FLOORS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Owner (A1)' datatype='string' name='[OWNER (A1)]' role='dimension' type='nominal' />
+      <column caption='Owner' datatype='string' name='[OWNER]' role='dimension' type='nominal' />
+      <column caption='Own Occ (A1)' datatype='string' name='[OWN_OCC (A1)]' role='dimension' type='nominal' />
+      <column caption='Own Occ' datatype='string' name='[OWN_OCC]' role='dimension' type='nominal' />
+      <column caption='Pid (A1)' datatype='integer' name='[PID (A1)]' role='measure' type='quantitative' />
+      <column caption='Ptype (A1)' datatype='integer' name='[PTYPE (A1)]' role='measure' type='quantitative' />
+      <column caption='Ptype' datatype='integer' name='[PTYPE]' role='measure' type='quantitative' />
+      <column caption='R Ac (A1)' datatype='string' name='[R_AC (A1)]' role='dimension' type='nominal' />
+      <column caption='R Ac' datatype='string' name='[R_AC]' role='dimension' type='nominal' />
+      <column caption='R Bdrms (A1)' datatype='integer' name='[R_BDRMS (A1)]' role='measure' type='quantitative' />
+      <column caption='R Bdrms' datatype='integer' name='[R_BDRMS]' role='measure' type='quantitative' />
+      <column caption='R Bldg Styl (A1)' datatype='string' name='[R_BLDG_STYL (A1)]' role='dimension' type='nominal' />
+      <column caption='R Bldg Styl' datatype='string' name='[R_BLDG_STYL]' role='dimension' type='nominal' />
+      <column caption='R Bth Style (A1)' datatype='string' name='[R_BTH_STYLE (A1)]' role='dimension' type='nominal' />
+      <column caption='R Bth Style2 (A1)' datatype='string' name='[R_BTH_STYLE2 (A1)]' role='dimension' type='nominal' />
+      <column caption='R Bth Style2' datatype='string' name='[R_BTH_STYLE2]' role='dimension' type='nominal' />
+      <column caption='R Bth Style' datatype='string' name='[R_BTH_STYLE]' role='dimension' type='nominal' />
+      <column caption='R Ext Cnd (A1)' datatype='string' name='[R_EXT_CND (A1)]' role='dimension' type='nominal' />
+      <column caption='R Ext Cnd' datatype='string' name='[R_EXT_CND]' role='dimension' type='nominal' />
+      <column caption='R Ext Fin (A1)' datatype='string' name='[R_EXT_FIN (A1)]' role='dimension' type='nominal' />
+      <column caption='R Ext Fin' datatype='string' name='[R_EXT_FIN]' role='dimension' type='nominal' />
+      <column caption='R Fplace (A1)' datatype='integer' name='[R_FPLACE (A1)]' role='measure' type='quantitative' />
+      <column caption='R Fplace' datatype='integer' name='[R_FPLACE]' role='measure' type='quantitative' />
+      <column caption='R Full Bth (A1)' datatype='integer' name='[R_FULL_BTH (A1)]' role='measure' type='quantitative' />
+      <column caption='R Full Bth' datatype='integer' name='[R_FULL_BTH]' role='measure' type='quantitative' />
+      <column caption='R Half Bth (A1)' datatype='integer' name='[R_HALF_BTH (A1)]' role='measure' type='quantitative' />
+      <column caption='R Half Bth' datatype='integer' name='[R_HALF_BTH]' role='measure' type='quantitative' />
+      <column caption='R Heat Typ (A1)' datatype='string' name='[R_HEAT_TYP (A1)]' role='dimension' type='nominal' />
+      <column caption='R Heat Typ' datatype='string' name='[R_HEAT_TYP]' role='dimension' type='nominal' />
+      <column caption='R Int Cnd (A1)' datatype='string' name='[R_INT_CND (A1)]' role='dimension' type='nominal' />
+      <column caption='R Int Cnd' datatype='string' name='[R_INT_CND]' role='dimension' type='nominal' />
+      <column caption='R Int Fin (A1)' datatype='string' name='[R_INT_FIN (A1)]' role='dimension' type='nominal' />
+      <column caption='R Int Fin' datatype='string' name='[R_INT_FIN]' role='dimension' type='nominal' />
+      <column caption='R Kitch (A1)' datatype='integer' name='[R_KITCH (A1)]' role='measure' type='quantitative' />
+      <column caption='R Kitch' datatype='integer' name='[R_KITCH]' role='measure' type='quantitative' />
+      <column caption='R Kitch Style (A1)' datatype='string' name='[R_KITCH_STYLE (A1)]' role='dimension' type='nominal' />
+      <column caption='R Kitch Style' datatype='string' name='[R_KITCH_STYLE]' role='dimension' type='nominal' />
+      <column caption='R Ovrall Cnd (A1)' datatype='string' name='[R_OVRALL_CND (A1)]' role='dimension' type='nominal' />
+      <column caption='R Ovrall Cnd' datatype='string' name='[R_OVRALL_CND]' role='dimension' type='nominal' />
+      <column caption='R Roof Typ (A1)' datatype='string' name='[R_ROOF_TYP (A1)]' role='dimension' type='nominal' />
+      <column caption='R Roof Typ' datatype='string' name='[R_ROOF_TYP]' role='dimension' type='nominal' />
+      <column caption='R Total Rms (A1)' datatype='integer' name='[R_TOTAL_RMS (A1)]' role='measure' type='quantitative' />
+      <column caption='R Total Rms' datatype='integer' name='[R_TOTAL_RMS]' role='measure' type='quantitative' />
+      <column caption='R View (A1)' datatype='string' name='[R_VIEW (A1)]' role='dimension' type='nominal' />
+      <column caption='R View' datatype='string' name='[R_VIEW]' role='dimension' type='nominal' />
+      <column caption='Structure Class (A1)' datatype='string' name='[STRUCTURE_CLASS (A1)]' role='dimension' type='nominal' />
+      <column caption='Structure Class' datatype='string' name='[STRUCTURE_CLASS]' role='dimension' type='nominal' />
+      <column caption='St Name (A1)' datatype='string' name='[ST_NAME (A1)]' role='dimension' type='nominal' />
+      <column caption='St Name' datatype='string' name='[ST_NAME]' role='dimension' type='nominal' />
+      <column caption='St Name Suf (A1)' datatype='string' name='[ST_NAME_SUF (A1)]' role='dimension' type='nominal' />
+      <column caption='St Name Suf' datatype='string' name='[ST_NAME_SUF]' role='dimension' type='nominal' />
+      <column caption='St Num (A1)' datatype='string' name='[ST_NUM (A1)]' role='dimension' type='nominal' />
+      <column caption='St Num' datatype='string' name='[ST_NUM]' role='dimension' type='nominal' />
+      <column caption='Unit Num (A1)' datatype='string' name='[UNIT_NUM (A1)]' role='dimension' type='nominal' />
+      <column caption='Unit Num' datatype='string' name='[UNIT_NUM]' role='dimension' type='nominal' />
+      <column caption='U Ac (A1)' datatype='string' name='[U_AC (A1)]' role='dimension' type='nominal' />
+      <column caption='U Ac' datatype='string' name='[U_AC]' role='dimension' type='nominal' />
+      <column caption='U Base Floor (A1)' datatype='integer' name='[U_BASE_FLOOR (A1)]' role='measure' type='quantitative' />
+      <column caption='U Base Floor' datatype='integer' name='[U_BASE_FLOOR]' role='measure' type='quantitative' />
+      <column caption='U Bdrms (A1)' datatype='integer' name='[U_BDRMS (A1)]' role='measure' type='quantitative' />
+      <column caption='U Bdrms' datatype='integer' name='[U_BDRMS]' role='measure' type='quantitative' />
+      <column caption='U Bth Style (A1)' datatype='string' name='[U_BTH_STYLE (A1)]' role='dimension' type='nominal' />
+      <column caption='U Bth Style' datatype='string' name='[U_BTH_STYLE]' role='dimension' type='nominal' />
+      <column caption='U Corner (A1)' datatype='string' name='[U_CORNER (A1)]' role='dimension' type='nominal' />
+      <column caption='U Corner' datatype='string' name='[U_CORNER]' role='dimension' type='nominal' />
+      <column caption='U Fplace (A1)' datatype='integer' name='[U_FPLACE (A1)]' role='measure' type='quantitative' />
+      <column caption='U Fplace' datatype='integer' name='[U_FPLACE]' role='measure' type='quantitative' />
+      <column caption='U Full Bth (A1)' datatype='integer' name='[U_FULL_BTH (A1)]' role='measure' type='quantitative' />
+      <column caption='U Full Bth' datatype='integer' name='[U_FULL_BTH]' role='measure' type='quantitative' />
+      <column caption='U Half Bth (A1)' datatype='integer' name='[U_HALF_BTH (A1)]' role='measure' type='quantitative' />
+      <column caption='U Half Bth' datatype='integer' name='[U_HALF_BTH]' role='measure' type='quantitative' />
+      <column caption='U Heat Typ (A1)' datatype='string' name='[U_HEAT_TYP (A1)]' role='dimension' type='nominal' />
+      <column caption='U Heat Typ' datatype='string' name='[U_HEAT_TYP]' role='dimension' type='nominal' />
+      <column caption='U Int Cnd (A1)' datatype='string' name='[U_INT_CND (A1)]' role='dimension' type='nominal' />
+      <column caption='U Int Cnd' datatype='string' name='[U_INT_CND]' role='dimension' type='nominal' />
+      <column caption='U Int Fin (A1)' datatype='string' name='[U_INT_FIN (A1)]' role='dimension' type='nominal' />
+      <column caption='U Int Fin' datatype='string' name='[U_INT_FIN]' role='dimension' type='nominal' />
+      <column caption='U Kitch Style (A1)' datatype='string' name='[U_KITCH_STYLE (A1)]' role='dimension' type='nominal' />
+      <column caption='U Kitch Style' datatype='string' name='[U_KITCH_STYLE]' role='dimension' type='nominal' />
+      <column caption='U Kitch Type (A1)' datatype='string' name='[U_KITCH_TYPE (A1)]' role='dimension' type='nominal' />
+      <column caption='U Kitch Type' datatype='string' name='[U_KITCH_TYPE]' role='dimension' type='nominal' />
+      <column caption='U Num Park (A1)' datatype='integer' name='[U_NUM_PARK (A1)]' role='measure' type='quantitative' />
+      <column caption='U Num Park' datatype='integer' name='[U_NUM_PARK]' role='measure' type='quantitative' />
+      <column caption='U Orient (A1)' datatype='string' name='[U_ORIENT (A1)]' role='dimension' type='nominal' />
+      <column caption='U Orient' datatype='string' name='[U_ORIENT]' role='dimension' type='nominal' />
+      <column caption='U Tot Rms (A1)' datatype='integer' name='[U_TOT_RMS (A1)]' role='measure' type='quantitative' />
+      <column caption='U Tot Rms' datatype='integer' name='[U_TOT_RMS]' role='measure' type='quantitative' />
+      <column caption='U View (A1)' datatype='string' name='[U_VIEW (A1)]' role='dimension' type='nominal' />
+      <column caption='U View' datatype='string' name='[U_VIEW]' role='dimension' type='nominal' />
+      <column caption='Yr Built (A1)' datatype='integer' name='[YR_BUILT (A1)]' role='dimension' type='quantitative' />
+      <column caption='Yr Built' datatype='integer' name='[YR_BUILT]' role='dimension' type='quantitative' />
+      <column caption='Yr Remod (A1)' datatype='integer' name='[YR_REMOD (A1)]' role='dimension' type='quantitative' />
+      <column caption='Yr Remod' datatype='integer' name='[YR_REMOD]' role='dimension' type='quantitative' />
+      <column caption='Zipcode (A1)' datatype='integer' default-format='*00000' name='[ZIPCODE (A1)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Zipcode' datatype='integer' default-format='*00000' name='[ZIPCODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[Categories]' derivation='None' name='[none:Categories:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ZIPCODE]' derivation='None' name='[none:ZIPCODE:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.403614' measure-ordering='alphabetic' measure-percentage='0.596386' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Categories:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Commercial&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Residential&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Others&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:ZIPCODE:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>2128</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2115</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[ZIPCODE]' filter-group='2'>
+        <groupfilter from='2090' function='range' level='[ZIPCODE]' to='2467' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Line Graph - Commercial Yr_Remodel of Kenmore Square 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>Change in trend of Total Assessed Value by Year Remodeled</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold' fontsize='12'>(Commercial)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='A (Cleaned Data Assignment1)' name='federated.1if3g0z0l02l761g7zaup1ncgi2d' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1if3g0z0l02l761g7zaup1ncgi2d'>
+            <column caption='Av Total' datatype='integer' name='[AV_TOTAL]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Categories]' role='dimension' type='nominal' />
+            <column caption='Yr Built' datatype='integer' name='[YR_BUILT]' role='dimension' type='quantitative' />
+            <column caption='Yr Remod (A1)' datatype='integer' name='[YR_REMOD (A1)]' role='dimension' type='quantitative' />
+            <column caption='Zipcode' datatype='integer' default-format='*00000' name='[ZIPCODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[Categories]' derivation='None' name='[none:Categories:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YR_BUILT]' derivation='None' name='[none:YR_BUILT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[YR_REMOD (A1)]' derivation='None' name='[none:YR_REMOD (A1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ZIPCODE]' derivation='None' name='[none:ZIPCODE:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[AV_TOTAL]' derivation='Sum' name='[sum:AV_TOTAL:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:Categories:nk]'>
+            <groupfilter function='member' level='[none:Categories:nk]' member='&quot;Commercial&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_BUILT:qk]' included-values='in-range'>
+            <min>1800</min>
+            <max>2018</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' included-values='in-range'>
+            <min>1970</min>
+            <max>2017</max>
+          </filter>
+          <filter class='categorical' column='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:ZIPCODE:ok]'>
+            <groupfilter function='member' level='[none:ZIPCODE:ok]' member='2115' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_BUILT:qk]</column>
+            <column>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:Categories:nk]</column>
+            <column>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:ZIPCODE:ok]</column>
+            <column>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='88' />
+            <encoding attr='space' class='0' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' scope='rows' value='AV_Total' />
+            <encoding attr='space' class='0' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' field-type='quantitative' major-origin='0' major-spacing='5' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' scope='cols' value='Year Remodeled' />
+            <format attr='tick-color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='#000000' />
+            <format attr='tick-color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' value='#00000084' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='cols' value='#c0c0c0' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#59a14f' />
+            <format attr='color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:Categories:nk]' value='#000000' />
+            <format attr='wrap' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' value='on' />
+            <format attr='text-format' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' value='*&quot;$&quot;#,##0.00;(&quot;$&quot;#,##0.00)' />
+            <format attr='wrap' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='off' />
+            <format attr='text-format' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='C1033%' />
+            <format attr='text-format' data-class='total' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:Categories:nk]' value='128' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#f28e2b' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='rows' value='#f28e2b' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='#000000' />
+            <format attr='color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' value='#000000' />
+            <format attr='color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:Categories:nk]' value='#000000' />
+            <format attr='text-orientation' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='0' />
+            <format attr='text-format' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]' value='' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[sum:AV_TOTAL:qk]</rows>
+        <cols>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:YR_REMOD (A1):qk]</cols>
+      </table>
+      <simple-id uuid='{7A7C0B34-FB9D-470F-81B6-0EBF775B8C73}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E3E87A9B-0AF6-487C-9E17-3F777167CC1F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Line Graph - Commercial Yr_Remodel of Kenmore Square 1' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1if3g0z0l02l761g7zaup1ncgi2d].[none:ZIPCODE:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF5B9080-B3C5-4B32-AE28-C91676CEE6F5}' />
+    </window>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CBB6F998-D861-4723-BAD7-A72F828F0551}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Line Graph - Commercial Yr_Remodel of Kenmore Square 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAXn0lEQVR4nO3deXRU9f3/8ee9s2aZTPaQBDQJkSUsCRJwQUAEsYhWbdXzrWjlZ624tqh1
+      qwsorq2oCCri8rVIrVTBqlUQWZV9DQGSAEmAJJCFLJNlJrPf7x9RfipJ/SYQknzv+3EO58y5
+      5879fD7kvuaz3HtnFE3TNITQKbWrKyBEV5IACF2TAAhd00UANE1DpjqiNboIgN/vlwCIVuki
+      AEK0RQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHSt2wQgf/VC
+      7rvnDqbeeDMvLt2C13WU5++5hf93y208Mv9z/JqT5a8/wc233MbtD8+mqLaOZbOuJevaByis
+      9qD5vcy9/UJG3fYGDV3dGNFjdJsApI68imdmv8qzt49nf95hSrcu5mjGLcyb8xgRW9eSe3AX
+      nx6K4/nX53F1nxrW7SpFMRjITkuj9HgtAU8hqjWbxNiwrm6K6EGMXV2B7wWba1jwwn3sLLdx
+      0/SHadzxBCkDbiLMFkpGUhU5uRU0J59FotVEU99otlRUkqSoZGbEkFtcRWb9VpRhowg96AFg
+      9erVLF68GIDRo0dzww03dGXzRDfVbQIQEpvKH596k0Pfvs/shcu5eWQEjsYmtIBKVaWN5AQr
+      SkEjbk2jvraJiLAIAOIGD6N8+Ro+C9OYeGUcmw+WATBu3DjGjRsHtDwPIERruskQyMWutavY
+      sGUXR2t9mCwGzr7gl9Sv/JBly1ayw5bCqOwsMhtzWLpiPV/taiQzI6nlraEpDLBs42tnLKk/
+      iLOiKCf+CdEWpXt8LUqA0n2b+XZrAW5zDGMmTqBvbCiF275i0/4mssZOYOhZUThK97Bs9Xbi
+      B49ldNZZVOauw5MyHvvxbexpiuWSc8ysKXAyakQ/zD84us/nw2AwoKrdJO+i2+gmAehcEgDR
+      FjkjhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5J
+      AISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCErkkAhK5JAISuSQCE
+      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
+      7X8A6xYZQ5TrWCcAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
